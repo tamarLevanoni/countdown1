@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <div id="load"></div>
+    <img id="cat" hidden onload="loaded()"></img>
+    <div id="min">
+      <label for="minutesIn"
+        >Minutes
+        <input id="minutesIn" type="number" placeholder="00" />
+        <div class="error" id="errorMin"></div>
+      </label>
+    </div>
+    <div id="sec">
+      <label for="secondsIn"
+        >Seconds
+        <input id="secondsIn" type="number" placeholder="00" />
+        <div class="error" id="errorSec"></div>
+      </label>
+    </div>
+    <div id="timeout">
+      <span id="minutes">00</span>
+      :
+      <span id="seconds">00</span>
+    </div>
+    <button id="startButton" onclick="start(event)">Start</button>
+    <button id="stopButton" onclick="stop()">Stop</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>
